@@ -27,7 +27,7 @@ sub mslice : lvalue {
   }
   else {
     # call each method as a getter accessor, and gather values
-    my @values = map {$obj->$_()} @meths;
+    my @values = map {scalar $obj->$_()} @meths;
     rreturn @values;
   }
   return;

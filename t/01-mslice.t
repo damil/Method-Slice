@@ -53,7 +53,8 @@ is($point->z, 1_010);
 
 # the call context for method calls is correct
 my ($x, $y, $z) = mslice($point, qw/x y z/);
-is_deeply( {x => $x, y => $y, z => $z}, {x => $point->x, y => $point->y, z => 1_010} );
+is_deeply( {x => $x,        y => $y,        z => $z   },
+           {x => $point->x, y => $point->y, z => 1_010} );
 
 # The line below won't work because that's an lvalue context without ASSIGN
 # (mslice($point, qw/x y/)) = map {$_ - 2} mslice($point, qw/y x/);

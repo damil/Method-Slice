@@ -6,7 +6,7 @@ use Exporter   qw/import/;
 use Carp;
 use Want;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @EXPORT  = qw/mslice/;
 
 sub mslice : lvalue {
@@ -157,6 +157,7 @@ L<https://metacpan.org/module/Method::Slice>
 
 =head1 ACKNOWLEDGEMENTS
 
+Thanks to Belden Lyman for useful fixes.
 
 =head1 LICENSE AND COPYRIGHT
 

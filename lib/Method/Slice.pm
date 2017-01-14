@@ -66,7 +66,7 @@ Method::Slice - A slice of method calls within an object
 
 Perl has a very convenient feature called I<slice>, to extract
 several pieces of information at once from an array or from a hash
-(see L<perldata/"Slices"). It is even possible to assign a list,
+(see L<perldata/"Slices">). It is even possible to assign a list,
 to a slice, i.e. to simultaneously update several items within
 an array or hash.
 
